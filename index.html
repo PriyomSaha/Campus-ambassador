@@ -1,0 +1,705 @@
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+   <meta charset="utf-8">
+    <meta name="" content="">
+    <meta name="description" content="">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+  
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,300,400,500,700,900" rel="stylesheet">
+
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+    
+    <link rel="icon" href="fav.png">
+    <title>Ureckon'19 | Campus Ambassador</title>
+
+    <style>
+        body {
+            font-family: 'Fira Sans', sans-serif;
+            height: auto;
+            width: 100vw;
+            border: 0;
+            margin: 0;
+            padding: 0 !important;
+            overflow-x: hidden;
+        }
+
+        
+/* social icons */
+ul.social-network {
+    max-width: 200px;
+	list-style: none;
+	display: flex;
+	margin: 0.5rem auto !important;
+	padding: 0;
+}
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+
+.social-network a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+	background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+	background-color:#BD3518;
+}
+.social-network a.icoLinkedin:hover {
+	background-color:#007bb7;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+	color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+}
+.social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+     
+        .cLink, .cLink:hover{
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+        .navbar{
+            background: #220533;
+        }
+        .navbar-brand{
+            font-size: 1.35rem;
+            font-weight: 500;
+        }
+    
+        .nav-item {
+            padding: 1.5vh 1.2vw !important;
+            font-size: 1.25rem;
+            font-weight: 300;
+        }
+
+        .homes{
+            height: auto;
+            background: linear-gradient(to top right,#fc144e 0%,#6c4079 100%) no-repeat;
+            padding: 15vh 4vw 10vh 4vw !important;
+            text-align: center;
+        }
+
+        .main-headline{
+            max-width: 800px;
+            width: 90%;
+            margin: 5vh auto;
+            color: #ffffff;
+            font-family: 'Abril Fatface', serif;
+            font-weight: 400;
+            text-align: center;
+            line-height: 1.1;
+        }
+
+        .abt-headline{
+            padding: 2vh 3vw;
+            max-width: 800px;
+            margin: 2vh auto 5vh;
+            font-size: 1.15rem;
+            font-weight: 300;
+            text-align: center;
+            color: #f0f0f0;
+        }
+
+        .btn-outline-dark{
+            border-color: #3b1147 !important;
+            border-width: 0.1rem !important;
+            border-radius: 5rem !important;
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: #dfd5e6;
+            background-color: #220533 !important;
+            padding: 0.5em 1.5em;
+        }
+
+        .btn-outline-dark:hover{
+            color: #220533;
+            background-color: transparent !important;
+        }
+
+        .img-resp{
+            height: 220px !important;
+            width: 220px !important;
+            border-radius: 50%;
+            border-width: 0.1rem;
+            border: #fc3a52 solid 0.4rem; 
+        }
+
+        .features-x{
+            height: auto;
+            background-color: rgb(224, 229, 233);
+            padding: 9vh 4vw 5vh 4vw !important;
+            text-align: center;
+        }
+
+        .features-headline{
+            padding: 0vh 15vw;
+            margin-top: 5vh;
+            color:#fc2c77;
+            font-family: 'Abril Fatface', serif;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .about-hd{
+            padding: 2vh 0;
+            max-width: 700px;
+            width: 90%;
+            margin: 0 auto;
+            font-size: 1.0rem;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .ben-heading{
+            margin-top: 4.5vh;
+            margin-bottom: 2vh;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fc2c77;
+        }
+
+        .about-tbl{
+            padding: 0.5rem 1rem;
+            font-weight: 300; 
+        }
+
+
+        .register-x{
+            height: auto;
+            background-color: #fc3a52;
+            padding: 8vh 0 10vh !important;
+            text-align: center;
+        }
+
+    
+        .card-x{
+            padding: 3vh 3vw;
+            border: #ff0544 solid 0.4rem;
+        }
+
+        .form-label{
+            font-weight:500;
+            font-size: 1.0rem;
+            margin-top: 1vh;
+        }
+
+        .register-headline{
+            padding: 0vh 15vw;
+            color:white;
+            font-family: 'Abril Fatface', serif;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .btn-register{
+            border-color: #ff0544;
+            background-color: #ff0544;
+            color:#ffffff;
+        }
+
+        .btn-register:hover{
+            background-color: transparent;
+            color:#ff0544;
+        }
+
+        .contact-x{
+            height: auto;
+            padding: 9vh 4vw 10vh 4vw !important;
+            text-align: center;
+        }
+
+        .contact-headline{
+            padding: 0vh 15vw;
+            margin-top: 5vh;
+            color:#a8a8a8;
+            font-family: 'Abril Fatface', serif;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .about-cnt{
+            padding: 2vh 8vw;
+            font-size: 1.0rem;
+            font-weight: 500;
+            text-align: center;
+            color: #dfd5e6;
+        }
+        
+        .ar-is{
+            border-radius: 50%;
+            padding: 1vh;
+        }
+
+        .copr{
+            padding: 0.5vh;
+            background-color: #0e0116;
+        }
+
+        .about-cr{
+            padding-top: 1vh;
+            font-size: 1.0rem;
+            font-weight: 300;
+            text-align: center;
+            color: #dfd5e6;
+        }
+        .wis{
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+        .form-registration{
+                max-width: 800px;
+                width: 90%;
+                text-align: left;
+                margin: 0 auto;
+            }
+
+        .benefit-cards{
+            margin: 1em 0;
+        }
+        
+    
+        /* X-Small devices (landscape phones, 320px and up) */
+        @media (min-width: 320px) {
+            .navbar-nav {
+                margin-left: 0vw;
+                text-align: center;
+            }
+            .display-3{
+                font-size: 2em;
+            }
+
+            /*.wis{
+                width: 50vw;
+                margin-left: 0vw;
+            }*/
+        }
+    
+        /* Small devices (landscape phones, 576px and up) */
+        @media (min-width: 576px) {
+            .navbar-nav {
+                margin-left: 0vw;
+                text-align: center;
+            }
+            .display-3{
+                font-size: 3em;
+            }
+            /*.wis{
+                width: 50vw;
+                margin-left: 0vw;
+            }*/
+        }
+    
+        /* Medium devices (tablets, 768px and up) */
+        @media (min-width: 768px) {
+            .navbar-nav {
+                margin-left: 22vw;
+                text-align: center;
+            }
+            .display-3{
+            font-size: 4em;
+            }
+            .abt-headline{
+                font-size: 1.25rem;
+            }
+            /*.wis{
+                width: 50vw;
+                margin-left: 0vw;
+            }*/
+        }
+    
+        /* Large devices (desktops, 992px and up) */
+        @media (min-width: 992px) {
+            .navbar-nav {
+                margin-left: 45vw;
+                text-align: center;
+            }
+
+
+            /*.wis{
+                width: 50vw;
+                margin-left: 0vw;
+            }*/
+        }
+    
+        /* Extra large devices (large desktops, 1200px and up) */
+        @media (min-width: 1200px) {
+            .nav-item {
+                padding: 1.4vh 1.6vw !important;
+                font-size: 1.2rem;
+                font-weight: 300;
+            }
+
+
+            .navbar-nav {
+                margin-left: 43vw;
+                text-align: center;
+            }
+
+
+            /*.wis{
+                width: 50vw;
+                margin-left: 0vw;
+            }*/
+        }
+
+        /* Ultra large devices (large desktops, 1400px and up) */
+        @media (min-width: 1500px) {
+            .nav-item {
+                padding: 1.8vh 2vw !important;
+                font-size: 1.25rem;
+                font-weight: 300;
+            }
+
+
+            .navbar-nav {
+                margin-left: 44vw;
+                text-align: center;
+            }
+
+
+            /*.wis{
+                width: 50vw;
+                margin-left: 0vw;
+            }*/
+        }
+
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <!-- navbar starts here -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark ">
+        <a class="navbar-brand" href="#">
+            <img src="logo_with_wordmark_white.png" height="30" class="d-inline-block align-top"
+                alt="Ureckon"></a>
+        
+        <button id="toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#homeSection">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#features">Benefits</a>
+                <a class="nav-item nav-link" href="#register">Registration</a>
+                <a class="nav-item nav-link" href="#contact">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar ends here -->
+
+
+    <!-- home section -->
+    <div id="homeSection" class="homes">
+        <h1 class="display-3 main-headline">Join Ureckon'19 Campus Ambassador Program</h1>
+        <p class="abt-headline">UNIVERSITY OF ENGINEERING &#38; MANAGEMENT, KOLKATA in association with ISRO(INDIAN SPACE RESEARCH ORGANIZATION),is bringing forward it’s very own techno-management fest, <strong> URECKON-2019</strong>. Be the face of the innovation in your college. Inspire your friends to take part in the exciting events, be the leader!!</p>
+        <br>
+        <a href="#register" class="btn btn-outline-dark"> Register Now </a>
+    </div>
+    <!-- home section ends here -->
+
+
+    <!-- features start here -->
+    <div id="features" class="features-x">
+        <h1 class="display-3 features-headline">Why Become the CA?</h1>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 benefit-cards">
+                    <img src="./pp1.png" class="img-resp">
+                    <br>
+                    <h4 class="display-5 ben-heading">Skill Improvement</h4>
+                    <p class="about-tbl">It will help you to improve your managerial as well as communication skills.</p>
+                </div>
+
+                <div class="col-md-4 benefit-cards">
+                    <img src="./pp2.jpg" class="img-resp">
+                    <br>
+                    <h4 class="display-5 ben-heading">Networking</h4>
+                    <p class="about-tbl">By communicating with many people it will increase your contacts which will help you in future.</p>
+                </div>
+
+                <div class="col-md-4 benefit-cards">
+                    <img src="./pp3.jpg" class="img-resp">
+                    <br>
+                    <h4 class="display-5 ben-heading">Recognition</h4>
+                    <p class="about-tbl">You are getting to represent your college at a higher level.</p>
+                </div>
+
+            </div>
+        </div>
+        <p class="about-hd"><strong> The Campus Ambassadors will also be provided with lucrative incentives!</strong> All the CAs will be provided with certificates from the ISRO! The top performing CAs with most number of registrations will be provided with not only the certificate but also other exciting merchandise along with a free workshop!
+                
+                </p>
+        <br>
+
+    </div>
+    <!-- features ends here -->
+
+
+    <!-- registration section start here -->
+    <div id="register" class="register-x">
+        <h1 class="display-3 register-headline">Hurry Up and Register Yourself!</h1>
+        <br><br>
+
+        <div class="form-registration">
+            <div class="card card-x">
+                <div class="card-body card-bodyx">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label" for="identityName">Name</label>
+                            <input type="text" class="form-control" id="identityName">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="inputEmail">Email Address</label>
+                            <input type="email" class="form-control" id="inputEmail">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="mobileNum">Mobile Number</label>
+                            <input type="text" class="form-control" id="mobileNum">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="address">Address</label>
+                            <input type="text" class="form-control" id="address">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="colgName">College/University/Institution Name</label>
+                            <input type="text" class="form-control" id="colgName">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="colgCity">City</label>
+                            <input type="text" class="form-control" id="colgCity">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="colgStrentg">Total Student Strength of your Institution(approx)</label>
+                            <input type="text" class="form-control" id="colgStrentg">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="studyCourse">Course of Study</label>
+                            <select class="form-control" id="studyCourse">
+                                <option>B.Tech/B.E.</option>
+                                <option>M.Tech/M.E.</option>
+                                <option>BCA</option>
+                                <option>MCA</option>
+                                <option>BBA</option>
+                                <option>MBA</option>
+                                <option>B.Sc</option>
+                                <option>B.Arch</option>
+                                <option>BA</option>
+                                <option>BCom.</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="dept">Department</label>
+                            <input type="text" class="form-control" id="dept">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="yos">Year Of Study</label>
+                            <select class="form-control" id="yos">
+                                <option>1st year</option>
+                                <option>2nd year</option>
+                                <option>3nd year</option>
+                                <option>4th year</option>
+                                <option>5th year</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="cop">Contact Point - Gen. Secretary/President/Head Student Authority of
+                                Student Body</label>
+                            <textarea type="text" rows="2" class="form-control" id="cop"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="porh">Positions of Responsibility Held</label>
+                            <textarea type="text" rows="2" class="form-control" id="porh"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="whyHro">Why Do You Want to join as Ureckon Campus Ambassador?</label>
+                            <textarea type="text" rows="4" class="form-control" id="whyHro"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="knoUCHP">How did you came to know about Ureckon Campus Ambassador Program?</label>
+                            <select class="form-control" id="knoUCHP">
+                                <option>Ureckon Official FB Page</option>
+                                <option>Ureckon Official Website</option>
+                                <option>Ureckon Representatives</option>
+                                <option>Ureckon Campus Ambassador Poster</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                    </form>
+                    <br>
+                    <button type="submit" class="btn btn-register btn-lg btn-block" onclick="register()">Register!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of registration section here -->
+
+    <!-- contact us strats here -->
+    <div id="contact" class="contact-x bg-dark">
+        <h1 class="display-3 contact-headline">Contact Us</h1>
+        
+        <p class="about-cnt"></p>
+        
+        <div class="row wis">
+            <div class="col-sm-6 col-xs-12">
+                <div class="card text-white bg-dark mb-3">
+                    <img class="card-img-top" src="./deb.jpg" alt="contactUsDM">
+                    <div class="card-body">
+                        <h5 class="card-title-x">Debarghya Mukherjee</h5>
+                        <div class="row">
+                            <div class="col-md-12">  
+                              <i class="fa fa-phone"></i><a href="tel:801" class="cLink"> +91 9674780883 </a></div>
+                            <div class="col-md-12">
+                                <i class="fa fa-envelope" ></i><a class="cLink" href="mailto:debarghya.mukherjee@ureckon.org?Subject=Ureckon%202019" ><font size="-1"> debarghya.mukherjee@ureckon.org</font></a></div>
+                        </div>
+                        <div class="col-sm-12">
+                            <ul class="social-network social-circle">
+                                <li><a href="https://fb.com/debarghya.mukherjee.33" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://linkedin.com/in/debarghya-mukherjee-11575912a" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="https://twitter.com/ureckon_uemk" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="col-sm-6 col-xs-12">
+                <div class="card text-white bg-dark mb-3">
+                    <img class="card-img-top" src="./sri.jpg" alt="contactUsSC">
+                    <div class="card-body">
+                        <h5 class="card-title-x">Srijani Chatterjee</h5>
+                        <div class="row">
+                          <div class="col-md-12">  
+                              <i class="fa fa-phone"></i><a href="tel:801" class="cLink"> +91 9007522975</a></div>
+                        <div class="col-sm-12">
+                            <i class="fa fa-envelope" ></i><a class="cLink" href="mailto:srijani.chatterjee@ureckon.org?Subject=Ureckon%202019" ><font size="-1"> srijani.chatterjee@ureckon.org</font></a></div>
+                        
+                        </div>
+                    <div class="col-md-12">
+                    <ul class="social-network social-circle">
+                        <li><a href="https://fb.com/inajirs97" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://linkedin.com/in/srijani-uem-8571b1138" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="https://twitter.com/ureckon_uemk" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                    </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of contact us -->
+
+    <!-- copyright -->
+    <div id="cpyright" class="copr">
+        <p class="about-cr">©2019.Ureckon, UEM Kolkata</p>        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    
+    
+    <script>
+
+//toggling navbar colour from transparent to dark on hamburger icon click
+/*var navbarToggler = document.getElementById("toggler").addEventListener("click", toggleBG);
+var    navbar = document.getElementsByClassName("navbar");
+
+function toggleBG() {
+    console.log("hello");
+    navbar[0].classList.toggle("bg-dark");
+};
+*/
+
+        register = () => {
+            // function to register
+            console.log("working");
+        }
+    </script>
+</body>
+
+</html>
